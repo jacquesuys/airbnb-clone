@@ -4,8 +4,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
 import Map from "../components/Map";
+import { SearchResultsType } from "../types";
 
-function Search({ searchResults }: any) {
+function Search({ searchResults }: SearchResultsType) {
   const router = useRouter();
   const { location, startDate, endDate, numOfGuests } = router.query;
   const formatDate = (date: any) => format(new Date(date), "dd MMM yy");

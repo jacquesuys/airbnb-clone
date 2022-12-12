@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { LargeCardType } from "../types";
 
-function MediumCard({ img, title, description, buttonText }: any) {
+function LargeCard({ img, title, description, buttonText }: LargeCardType) {
   return (
     <section className="relative py-16 cursor-pointer">
       <div className="relative h-96 min-w-[300px]">
@@ -23,4 +24,4 @@ function MediumCard({ img, title, description, buttonText }: any) {
   );
 }
 
-export default MediumCard;
+export default LargeCard;

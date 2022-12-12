@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -6,8 +5,9 @@ import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
 import Footer from "../components/Footer";
+import { HomepageType } from "../types";
 
-const Home: NextPage = ({ exploreData, cardsData }: any) => {
+const Home = ({ exploreData, cardsData }: HomepageType) => {
   return (
     <div className="">
       <Head>

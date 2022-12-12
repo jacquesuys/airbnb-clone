@@ -1,5 +1,6 @@
 import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { InfoCardType } from "../types";
 import FavouriteButton from "./FavouriteBtn";
 
 function InfoCard({
@@ -10,7 +11,7 @@ function InfoCard({
   star,
   price,
   total,
-}: any) {
+}: InfoCardType) {
   return (
     <div className="flex py-7 px-2 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
       <div className="relative h-24 w-40 md:h-52 md:w-80">

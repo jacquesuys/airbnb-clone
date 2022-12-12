@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ReactMapGl, { Marker, Popup } from "react-map-gl";
 import getCenter from "geolib/es/getCenter";
+import { SearchResultsType } from "../types";
 
-function Map({ searchResults }: any) {
+function Map({ searchResults }: SearchResultsType) {
   const [location, setLocation] = useState(searchResults[0]);
 
   const coordinates = searchResults.map((res: any) => ({
