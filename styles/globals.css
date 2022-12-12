@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button {
+    @apply hidden lg:inline-flex px-2 py-2 hover:shadow-lg border rounded-full text-sm cursor-pointer active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out;
+  }
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
